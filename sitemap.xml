@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://javartian.github.io/jacques-website/</loc>
+    <loc>https://jacquesvartabedian.art/</loc>
   </url>
   <url>
-    <loc>https://javartian.github.io/jacques-website/about.html</loc>
+    <loc>https://jacquesvartabedian.art/about.html</loc>
   </url>
   <url>
-    <loc>https://javartian.github.io/jacques-website/work.html</loc>
+    <loc>https://jacquesvartabedian.art/work.html</loc>
   </url>
   <url>
-    <loc>https://javartian.github.io/jacques-website/contact.html</loc>
+    <loc>https://jacquesvartabedian.art/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://jacquesvartabedian.art/archive.html</loc>
+  </url>
+  <url>
+    <loc>https://jacquesvartabedian.art/sorryforinterrupting.html</loc>
+  </url>
+  <url>
+    <loc>https://jacquesvartabedian.art/screenshots.html</loc>
+  </url>
+  <url>
+    <loc>https://jacquesvartabedian.art/selves.html</loc>
+  </url>
+  <url>
+    <loc>https://jacquesvartabedian.art/web-and-wall.html</loc>
+  </url>
+  <url>
+    <loc>https://jacquesvartabedian.art/aurevoir.html</loc>
+  </url>
+  <url>
+    <loc>https://jacquesvartabedian.art/memory.html</loc>
   </url>
 </urlset>
