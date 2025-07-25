@@ -565,14 +565,24 @@ body.work-page .archive-grid a:focus img {
 /* ====================================
    FIX STRETCHED SOCIAL ICONS ON MOBILE
    ==================================== */
+
+.image-gallery figure img {
+  width: 100%;
+  max-width: 1150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  cursor: pointer;
+}
+
 .footer .social-icons img {
-  height: 16px;
-  width: auto;
+  width: auto !important;
+  height: 16px !important;
   display: inline-block;
   object-fit: contain;
   margin-right: 10px;
-  max-width: 100%;
 }
+
 
 
 
