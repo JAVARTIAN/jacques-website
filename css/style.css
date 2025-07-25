@@ -476,10 +476,15 @@ body.work-page .archive-grid a:focus img {
 
 
 
-/* =============================
-   MOBILE FIXES
-   ============================= */
+/* ===========================================
+   UNIVERSAL MOBILE FIX FOR ALL PAGES
+   =========================================== */
 @media (max-width: 768px) {
+
+  body {
+    padding: 0 10px;
+    font-size: 14px;
+  }
 
   .header {
     left: 20px;
@@ -489,35 +494,69 @@ body.work-page .archive-grid a:focus img {
   }
 
   .logo {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .nav-links a {
-    margin-left: 15px;
-    font-size: 14px;
+    margin-left: 10px;
+    font-size: 13px;
   }
 
   .main-content {
-    margin: 120px 10px 0 10px;
+    margin: 100px 10px 20px 10px;
+    padding: 0;
     max-width: 100%;
-    padding: 0 10px;
     text-align: left;
   }
 
   .project-detail {
-    margin: 0 auto;
+    margin: 0;
+    padding: 20px 10px;
     max-width: 100%;
-    padding: 20px;
-    margin-left: 0;
   }
 
   .project-description {
     text-align: left;
     font-size: 14px;
+    padding: 0 5px;
+  }
+
+  .project-description h1 {
+    font-size: 18px;
   }
 
   .image-gallery img {
     max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  body.about-page .main-content {
+    width: auto;
+    margin: 100px 10px 20px 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  body.contact-page .main-content {
+    padding: 100px 10px 60px 10px;
+  }
+
+  body.contact-page .contact-section {
+    width: auto;
+    position: static;
+    padding-top: 40px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .footer .copyright {
+    text-align: left;
+    width: 100%;
   }
 }
 
