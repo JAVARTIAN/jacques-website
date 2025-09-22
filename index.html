@@ -21,12 +21,40 @@
   <meta name="twitter:description" content="Official website of Lebanese-Armenian artist Jacques Vartabedian." />
   <meta name="twitter:image" content="https://jacquesvartabedian.art/images/og-home.jpg" />
 
-  <!-- Optional: add your Google Search Console tag here -->
-  <!-- <meta name="google-site-verification" content="PASTE_CODE_HERE" /> -->
-
   <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Page-specific fixes to match other pages -->
+  <style>
+    /* logo link should look like plain heading (not blue/purple, no underline) */
+    .header .logo a,
+    .header .logo a:visited {
+      color: #6d6d6d; /* match your site’s grey */
+      text-decoration: none;
+    }
+    .header .logo a:hover,
+    .header .logo a:focus {
+      color: #8a8a8a;
+      text-decoration: none;
+    }
+    /* keep nav links consistent */
+    .nav-links a,
+    .nav-links a:visited {
+      text-decoration: none;
+      color: #8a8a8a;
+      letter-spacing: 0.04em;
+    }
+    .nav-links a:hover { color: #666; }
+
+    /* footer icon links should be images, no underline */
+    .footer .social-icons a { text-decoration: none; }
+    .footer .social-icons img {
+      width: 18px; height: 18px; vertical-align: middle;
+      display: inline-block;
+    }
+    .footer .social-icons a + a { margin-left: 8px; }
+  </style>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -54,7 +82,7 @@
   <!-- Header / Nav -->
   <header class="header">
     <div class="navbar">
-      <!-- This is the H1 (your name) -->
+      <!-- This is the H1 (kept as a link but styled to look like your brand) -->
       <h1 class="logo"><a href="index.html">Jacques Vartabedian</a></h1>
 
       <nav class="nav-links">
@@ -67,7 +95,6 @@
 
   <!-- Main / Hero image -->
   <main class="main-content">
-    <!-- This is the hero image src you asked about -->
     <img
       src="images/homepage_center.jpg"
       class="main-image"
@@ -78,11 +105,15 @@
     />
   </main>
 
-  <!-- Footer -->
+  <!-- Footer (uses icon images, not text) -->
   <footer class="footer">
     <div class="social-icons">
-      <a href="https://www.instagram.com/jacques_vartabedian/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/jacques_vartabedian/" target="_blank" rel="noopener">
+        <img src="images/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener">
+        <img src="images/facebook.png" alt="Facebook" />
+      </a>
     </div>
     <div class="copyright">© Jacques Vartabedian</div>
   </footer>
