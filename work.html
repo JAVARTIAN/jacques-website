@@ -1,116 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Brand-first SEO -->
+  <!-- ORIGINAL TAGS (kept) -->
+  <meta name="description" content="Jacques Vartabedian is a Lebanese-Armenian contemporary artist.">
+  <meta name="keywords" content="Jacques Vartabedian, artist, painting, installation">
+  <meta name="author" content="Jacques Vartabedian">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Work — Jacques Vartabedian</title>
-  <meta name="description" content="Selected works by Jacques Vartabedian — painting and installation. Series include Sorry for Interrupting, Au Revoir, Screenshots, Web & Wall, In the Memory of the Ones Who Didn’t Make It, and Selves." />
-  <link rel="canonical" href="https://jacquesvartabedian.art/work.html" />
-  <meta name="robots" content="index,follow" />
 
-  <!-- Social preview -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jacquesvartabedian.art/work.html" />
-  <meta property="og:title" content="Work — Jacques Vartabedian" />
-  <meta property="og:description" content="Selected works across painting and installation." />
-  <meta property="og:image" content="https://jacquesvartabedian.art/images/og-home.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Work — Jacques Vartabedian" />
-  <meta name="twitter:description" content="Selected works across painting and installation." />
-  <meta name="twitter:image" content="https://jacquesvartabedian.art/images/og-home.jpg" />
+  <!-- ✅ SEO ADDITIONS (no styling changes) -->
+  <link rel="canonical" href="https://jacquesvartabedian.art/work.html">
+  <meta name="robots" content="index,follow">
 
-  <!-- Fonts & CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jacquesvartabedian.art/work.html">
+  <meta property="og:title" content="Work — Jacques Vartabedian">
+  <meta property="og:description" content="Selected works by Jacques Vartabedian — painting and installation.">
+  <meta property="og:image" content="https://jacquesvartabedian.art/images/og-home.jpg">
 
-  <!-- Structured Data: Person + ItemList of projects -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Work — Jacques Vartabedian">
+  <meta name="twitter:description" content="Selected works by Jacques Vartabedian — painting and installation.">
+  <meta name="twitter:image" content="https://jacquesvartabedian.art/images/og-home.jpg">
+
+  <!-- Structured Data (optional but helpful) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Jacques Vartabedian",
-    "jobTitle": "Artist",
-    "url": "https://jacquesvartabedian.art/"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Selected Works",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "url": "https://jacquesvartabedian.art/sorryforinterrupting.html", "name": "Sorry for Interrupting" },
-      { "@type": "ListItem", "position": 2, "url": "https://jacquesvartabedian.art/aurevoir.html", "name": "Au Revoir" },
-      { "@type": "ListItem", "position": 3, "url": "https://jacquesvartabedian.art/screenshots.html", "name": "Screenshots" },
-      { "@type": "ListItem", "position": 4, "url": "https://jacquesvartabedian.art/web-and-wall.html", "name": "Web & Wall" },
-      { "@type": "ListItem", "position": 5, "url": "https://jacquesvartabedian.art/memory.html", "name": "In the Memory of the Ones Who Didn’t Make It" },
-      { "@type": "ListItem", "position": 6, "url": "https://jacquesvartabedian.art/selves.html", "name": "Selves" }
-    ]
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Jacques Vartabedian",
+    "jobTitle":"Artist",
+    "url":"https://jacquesvartabedian.art/"
   }
   </script>
 </head>
-
 <body class="work-page">
-  <!-- Header / Nav -->
-  <header class="header">
+  <div class="header">
     <div class="navbar">
-      <h1 class="logo"><a href="index.html">Jacques Vartabedian</a></h1>
-      <nav class="nav-links">
+      <a href="index.html" class="logo">Jacques Vartabedian</a>
+      <div class="nav-links">
         <a href="about.html">ABOUT</a>
-        <a href="work.html" aria-current="page">WORK</a>
+        <a href="work.html" class="active">WORK</a>
         <a href="contact.html">CONTACT</a>
-      </nav>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <!-- Main -->
   <main class="main-content">
-    <h1 class="visually-hidden">Selected Works</h1>
-
     <div class="archive-grid">
-      <a class="work-card" href="sorryforinterrupting.html">
-        <img src="images/sorry.jpg" alt="Sorry for Interrupting — exhibition/project cover" loading="lazy" width="800" height="600" />
+      <a href="sorryforinterrupting.html">
+        <img src="images/sorry.jpg" alt="sorryforinterrupting">
         <span class="title">Sorry for Interrupting</span>
       </a>
-
-      <a class="work-card" href="aurevoir.html">
-        <img src="images/aurevoir.jpg" alt="Au Revoir — project cover" loading="lazy" width="800" height="600" />
+      <a href="aurevoir.html">
+        <img src="images/aurevoir.jpg" alt="Au revoir">
         <span class="title">Au Revoir</span>
       </a>
-
-      <a class="work-card" href="screenshots.html">
-        <img src="images/screenshots.jpg" alt="Screenshots — project cover" loading="lazy" width="800" height="600" />
+      <a href="screenshots.html">
+        <img src="images/screenshots.jpg" alt="Screenshots">
         <span class="title">Screenshots</span>
       </a>
-
-      <a class="work-card" href="web-and-wall.html">
-        <img src="images/web-and-wall.jpg" alt="Web &amp; Wall — project cover" loading="lazy" width="800" height="600" />
+      <a href="web-and-wall.html">
+        <img src="images/web-and-wall.jpg" alt="Web &amp; Wall">
         <span class="title">Web &amp; Wall</span>
       </a>
-
-      <a class="work-card" href="memory.html">
-        <img src="images/memory.jpg" alt="In the Memory of the Ones Who Didn’t Make It — project cover" loading="lazy" width="800" height="600" />
-        <span class="title">In the Memory of the Ones Who Didn’t Make It</span>
+      <a href="memory.html">
+        <img src="images/memory.jpg" alt="In The Memory of the Ones Who Won’t Make It">
+        <span class="title">In The Memory of the Ones Who Didn't Make It</span>
       </a>
-
-      <a class="work-card" href="selves.html">
-        <img src="images/selves.jpg" alt="Selves — project cover" loading="lazy" width="800" height="600" />
+      <a href="selves.html">
+        <img src="images/selves.jpg" alt="Selves">
         <span class="title">Selves</span>
       </a>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="social-icons">
-      <a href="https://www.instagram.com/jacques_vartabedian/" target="_blank" rel="noopener">
-        <img src="images/instagram.png" alt="Instagram" />
-      </a>
-      <a href="https://facebook.com/" target="_blank" rel="noopener">
-        <img src="images/facebook.png" alt="Facebook" />
-      </a>
+      <a href="https://www.instagram.com/jacques_vartabedian/?hl=en"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="https://facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
     </div>
     <div class="copyright">© Jacques Vartabedian</div>
   </footer>
