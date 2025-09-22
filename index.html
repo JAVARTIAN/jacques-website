@@ -4,38 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ✅ Strong, brand-first title & description -->
+  <!-- Brand-first SEO -->
   <title>Jacques Vartabedian — Artist (Official Website)</title>
   <meta name="description" content="Official website of Lebanese-Armenian artist Jacques Vartabedian — painting and installation. Projects: Sorry for Interrupting, Au Revoir, Screenshots, Web & Wall, and more." />
-
-  <!-- ❌ 'keywords' is obsolete; remove it -->
-  <!-- <meta name="keywords" content="..."> -->
-
-  <!-- ✅ Canonical (always point to the bare domain version) -->
   <link rel="canonical" href="https://jacquesvartabedian.art/" />
-
-  <!-- ✅ Indexing allowed -->
   <meta name="robots" content="index,follow" />
 
-  <!-- ✅ Social (Open Graph + Twitter) -->
+  <!-- Social preview -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jacquesvartabedian.art/" />
   <meta property="og:title" content="Jacques Vartabedian — Artist" />
   <meta property="og:description" content="Official website of Lebanese-Armenian artist Jacques Vartabedian — painting and installation." />
-  <meta property="og:image" content="https://jacquesvartabedian.art/images/og-home.jpg" /> <!-- create this image (1200x630) -->
+  <meta property="og:image" content="https://jacquesvartabedian.art/images/og-home.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Jacques Vartabedian — Artist" />
   <meta name="twitter:description" content="Official website of Lebanese-Armenian artist Jacques Vartabedian." />
   <meta name="twitter:image" content="https://jacquesvartabedian.art/images/og-home.jpg" />
 
-  <!-- ✅ Optional: Google Search Console verification (paste your tag here when you create it) -->
+  <!-- Optional: add your Google Search Console tag here -->
   <!-- <meta name="google-site-verification" content="PASTE_CODE_HERE" /> -->
 
   <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- ✅ Structured data: Person + WebSite -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -46,8 +39,7 @@
     "url": "https://jacquesvartabedian.art/",
     "sameAs": [
       "https://www.instagram.com/jacques_vartabedian/",
-      "https://www.facebook.com/",
-      "https://www.galerietanit.com/", 
+      "https://www.galerietanit.com/",
       "https://www.artsy.net/"
     ],
     "knowsAbout": ["Painting","Installation","Lebanon","Beirut"]
@@ -59,25 +51,40 @@
 </head>
 
 <body class="home-page">
-  <div class="header">
+  <!-- Header / Nav -->
+  <header class="header">
     <div class="navbar">
-      <a href="index.html" class="logo">Jacques Vartabedian</a>
-      <div class="nav-links">
+      <!-- This is the H1 (your name) -->
+      <h1 class="logo"><a href="index.html">Jacques Vartabedian</a></h1>
+
+      <nav class="nav-links">
         <a href="about.html">ABOUT</a>
         <a href="work.html">WORK</a>
         <a href="contact.html">CONTACT</a>
-      </div>
+      </nav>
     </div>
-  </div>
+  </header>
+
+  <!-- Main / Hero image -->
   <main class="main-content">
-<img src="images/homepage_center.jpg" class="main-image" alt="Homepage">
+    <!-- This is the hero image src you asked about -->
+    <img
+      src="images/homepage_center.jpg"
+      class="main-image"
+      alt="Paintings and installations by Jacques Vartabedian"
+      width="1600" height="1000"
+      loading="eager"
+      fetchpriority="high"
+    />
   </main>
-  <div class="footer">
+
+  <!-- Footer -->
+  <footer class="footer">
     <div class="social-icons">
-      <a href="https://www.instagram.com/jacques_vartabedian/?hl=en/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
-      <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/jacques_vartabedian/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
     </div>
     <div class="copyright">© Jacques Vartabedian</div>
-  </div>
+  </footer>
 </body>
 </html>
