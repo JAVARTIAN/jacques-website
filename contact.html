@@ -25,17 +25,30 @@
   <main class="main-content">
     <section class="contact-section">
       <div class="container">
-        <p><p>
-  If your curiosity stirs at the fringes of my painted worlds and you wish to weave your thoughts into mine, send your words through this window into my studio.  
-</p>
-</p>
-        <form action="https://formsubmit.co/8a99df77e8355ac0cbc0911c96c47f82" method="POST" class="contact-form">
-  <input type="text" name="name" placeholder="Your Name *" required>
-  <input type="email" name="email" placeholder="Your Email *" required>
-  <input type="text" name="subject" placeholder="Subject" required>
-  <textarea name="message" rows="5" placeholder="Your Message *" required></textarea>
-  <button type="submit">Send</button>
-</form>
+        <p>
+          If your curiosity stirs at the fringes of my painted worlds and you wish to weave your thoughts into mine, send your words through this window into my studio.
+        </p>
+
+        <!-- FormSubmit integration -->
+        <form action="https://formsubmit.co/8a99df77e8355ac0cbc0911c96c47f82" method="POST" class="contact-form" accept-charset="UTF-8">
+          <!-- Delivery / UX options -->
+          <input type="hidden" name="_subject" value="New message from jacquesvartabedian.art">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://jacquesvartabedian.art/thanks.html">
+          <input type="hidden" name="_autoresponse" value="Thank you for reaching out. I’ve received your message and will get back to you soon. — Jacques">
+
+          <!-- Spam protection -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
+
+          <!-- Fields -->
+          <input type="text" name="name" placeholder="Your Name *" required>
+          <input type="email" name="email" placeholder="Your Email *" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" rows="5" placeholder="Your Message *" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </section>
   </main>
